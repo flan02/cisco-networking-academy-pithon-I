@@ -4,7 +4,7 @@ Python 1 content from 30 hours course provided by Cisco Networking
 install virtual environment
 
 ```bash
-python3 -m venv venv
+python3 -m venv env # create virtual environment
 source env/Scripts/activate # linux | bash (windows) | macOs
 .\env\Scripts\activate # powershell windows
 ```
@@ -27,3 +27,5 @@ pip install [dependency_name]
 [Python wiki page](https://wiki.python.org/moin/PythonImplementations)
 
 [Built-in Functions](https://docs.python.org/3/library/functions.html)
+
+[Python style guide](https://peps.python.org/pep-0008/)
