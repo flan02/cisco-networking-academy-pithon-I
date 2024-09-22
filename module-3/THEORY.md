@@ -101,3 +101,59 @@ The method will behave like a function, but can do something more ‒ it can **c
 You may ask: why are we talking about methods, not about lists?
 
 This is an essential issue right now, as we're going to show you how to add new elements to an existing list. This can be done with methods owned by all the lists, not by functions.
+
+
+# LIST COMPREHENSIVE
+
+1. List comprehension allows you to create new lists from existing ones in a concise and elegant way. The syntax of a list comprehension looks as follows:
+
+[ expression for element in list if conditional ]
+ 
+which is actually an equivalent of the following code:
+
+for element in list:
+    if conditional:
+        expression
+
+Example: the code creates a five-element list filled with the first five natural numbers raised to the power of 3
+```py
+cubed = [num ** 3 for num in range(5)]
+print(cubed)  # outputs: [0, 1, 8, 27, 64]
+```
+
+2. List comprehension can be used to filter elements from a list. The syntax is as follows:
+
+[ expression for element in list if conditional ]
+```py
+# A four-column/four-row table ‒ a two dimensional array (4x4)
+
+table = [[":(", ":)", ":(", ":)"],
+         [":)", ":(", ":)", ":)"],
+         [":(", ":)", ":)", ":("],
+         [":)", ":)", ":)", ":("]]
+
+print(table)
+print(table[0][0])  # outputs: ':('
+print(table[0][3])  # outputs: ':)'
+```
+
+3. You can nest as many lists in lists as you want, thereby creating n-dimensional lists, e.g., three-, four- or even sixty-four-dimensional arrays. For example:
+```py
+# Cube - a three-dimensional array (3x3x3)
+
+cube = [[[':(', 'x', 'x'],
+         [':)', 'x', 'x'],
+         [':(', 'x', 'x']],
+
+        [[':)', 'x', 'x'],
+         [':(', 'x', 'x'],
+         [':)', 'x', 'x']],
+
+        [[':(', 'x', 'x'],
+         [':)', 'x', 'x'],
+         [':)', 'x', 'x']]]
+
+print(cube)
+print(cube[0][0][0])  # outputs: ':('
+print(cube[2][2][0])  # outputs: ':)'
+```
