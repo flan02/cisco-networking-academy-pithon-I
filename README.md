@@ -34,6 +34,6 @@ pip install [dependency_name]
 
 # I have obtained a new certification
 
-![Badge](https://github.com/flan02/cisco-networking-academy-pithon-I/blob/main/public/python-essentials-1.1.png)
+![Badge](https://github.com/flan02/cisco-networking-academy-pithon-I/blob/main/public/python-essentials-1-small.png)
 
 ![Certificate](https://github.com/flan02/cisco-networking-academy-pithon-I/blob/main/public/python-essential-1.png)
