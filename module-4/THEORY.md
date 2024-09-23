@@ -49,3 +49,48 @@ _Commonly used functions in Python_
 | filter() | Constructs an iterator from elements of an iterable for which a function returns true. |
 | map() | Applies a given function to all the items in an input list. |
 | reduce() | Applies a rolling computation to sequential pairs of values in a list. |
+
+
+## Sequence types and mutability
+Before we start talking about tuples and dictionaries, we have to introduce two important concepts: sequence types and mutability.
+
+A sequence type is a type of data in Python which is able to store more than one value (or less than one, as a sequence may be empty), and these values can be sequentially (hence the name) browsed, element by element.
+
+As the for loop is a tool especially designed to iterate through sequences, we can express the definition as: a sequence is data which can be scanned by the for loop.
+
+You've encountered one Python sequence so far − the list. The list is a classic example of a Python sequence, although there are some other sequences worth mentioning, and we're going to present them to you now.
+
+The second notion − mutability − is a property of any Python data that describes its readiness to be freely changed during program execution. There are two kinds of Python data: mutable and immutable.
+
+Mutable data can be freely updated at any time − we call such an operation in situ.
+
+In situ is a Latin phrase that translates as literally in position. For example, the following instruction modifies the data in situ:
+  
+  ```python
+  list.append(1)
+  ```
+
+Immutable data cannot be modified in this way.
+
+Imagine that a list can only be assigned and read over. You would be able neither to append an element to it, nor remove any element from it. This means that appending an element to the end of the list would require the recreation of the list from scratch.
+
+You would have to build a completely new list, consisting of the all elements of the already existing list, plus the new element.
+
+The data type we want to tell you about now is a tuple. A tuple is an immutable sequence type. It can behave like a list, but it can't be modified in situ.
+
+
+# Errors in Python
+
+- Errors in data vs. errors in code
+
+Dealing with programming errors has (at least) two sides. The one appears when you get into trouble because your – apparently correct – code is fed with bad data. For example, you expect the code will input an integer value, but your careless user enters some random letters instead.
+
+It may happen that your code will be terminated then, and the user will be left alone with a terse and ambiguous error message on the screen. The user will be unsatisfied, and you should be unsatisfied, too.
+
+We're going to show you how to protect your code from this kind of failure and how not to provoke the user's anger.
+
+The other side of dealing with programming errors reveals itself when undesirable code behavior is caused by mistakes you made when you were writing your program. This kind of error is commonly called a “bug”, which is a manifestation of a well-established belief that if a program works badly, it must be caused by malicious bugs which live inside the computer hardware and cause short circuits or other interference.
+
+This idea is not as mad as it may look – such incidents were common in times when computers occupied large halls, consumed kilowatts of electricity, and produced enormous amounts of heat. Fortunately or not, these times are gone forever and the only bugs which can spoil your code are those you sowed in the code yourself. Therefore, we will try to show you how to find and eliminate your bugs, in other words, how to debug your code.
+
+Let's start the journey through the land of errors and bugs.
