@@ -1,4 +1,5 @@
 # cisco-networking-academy-pithon-I
+
 Python 1 content from 30 hours course provided by Cisco Networking
 
 install virtual environment
@@ -8,6 +9,7 @@ python3 -m venv env # create virtual environment
 source env/Scripts/activate # linux | bash (windows) | macOs
 .\env\Scripts\activate # powershell windows
 ```
+
 ```bash
 deactivate # to exit virtual environment
 ```
