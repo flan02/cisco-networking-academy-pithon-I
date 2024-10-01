@@ -21,9 +21,17 @@ where python
 where pip
 ```
 
+List of libraries in my environment (global or virtual)
+
 ```bash
 pip list
 pip install [dependency_name]
+```
+
+How many libraries I installed in my environment (global or virtual) ?
+
+```bash
+pip list | wc -l
 ```
 
 [Python wiki page](https://wiki.python.org/moin/PythonImplementations)
