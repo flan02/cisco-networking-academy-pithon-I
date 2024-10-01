@@ -38,6 +38,8 @@ Jupyter notebook setup
 
 [Installing Jupyter](https://jupyter.org/install)
 
+More python info
+
 [Python wiki page](https://wiki.python.org/moin/PythonImplementations)
 
 [Built-in Functions](https://docs.python.org/3/library/functions.html)
