@@ -34,6 +34,10 @@ How many libraries I installed in my environment (global or virtual) ?
 pip list | wc -l
 ```
 
+Jupyter notebook setup
+
+[Installing Jupyter](https://jupyter.org/install)
+
 [Python wiki page](https://wiki.python.org/moin/PythonImplementations)
 
 [Built-in Functions](https://docs.python.org/3/library/functions.html)
